@@ -1,3 +1,16 @@
+// Changes state of program
+var nextBtnShown = false;
+
+// Displays or hides "Next Question" button based on state of program
+function toggleNext() {
+  if (nextBtnShown === true) {
+    document.querySelector('#next1').classList.remove('hide');
+  } else {
+    document.querySelector('next1').classList.add('hide');
+  }
+}
+
+
 // quiz question 1
 
 function checkAnswer1() {
@@ -14,6 +27,8 @@ function checkAnswer1() {
     correctAnswerEl1.parentNode.classList.add('correct');
     alert("Sorry, wrong answer!");
   }
+  nextBtnShown = true;
+  toggleNext();
 }
 
 document.getElementById('submit1').addEventListener('click', checkAnswer1);
@@ -41,6 +56,17 @@ document.getElementById('submit2').addEventListener('click', checkAnswer2);
 
 
 
-// This code gives the user immediate feedback on whether they answered the multiple choice questions correctly
-// It does this in the form of an alert as well as a color change for the correct/incorrect responses
+// When "Next Question" button is clicked, hides question 1 and displays question 2
+
+var question1El = document.querySelector('#question1');
+var question2El = document.querySelector('#question2');
+
+function nextQuestion1() {
+  question1El.classList.add('hide');
+  question2El.classList.remove('hide');
+}
+
+
+document.getElementById('next1').addEventListener('click', nextQuestion1);
+
 // This javascript code can be improved by making one function that is "universal" for different questions instead of having a separate function for each question
