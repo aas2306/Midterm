@@ -1,0 +1,84 @@
+h1 {
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  background-color: brown;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+h4 {
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: bold;
+  color: brown;
+  padding-top: 10px;
+}
+
+h5 {
+  font-family: 'Julius Sans One', sans-serif;
+  color: brown;
+  font-weight: bolder;
+}
+
+p {
+  font-family: 'Andika', sans-serif;
+  font-size: 16px;
+}
+
+.allcontent {
+  padding: 60px 30px 10px 30px;
+}
+
+.textbox {
+  border: 1px dotted black;
+  padding: 5px;
+  margin: 15px 30px;
+}
+
+.videoWrapper {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+/*.slides {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}*/
+
+.slidesWrapper {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 35px;
+height: 0;
+overflow: hidden;
+margin-right: 40px;
+margin-left: 40px;
+}
+
+.slidesWrapper iframe {
+position: absolute;
+top:0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.panel {
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.correct {
+  color: green;
+  font-weight: bold;
+}
+
+.incorrect {
+  color: red;
+}
+
+.hide {
+  display: none;
+}
